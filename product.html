@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Bobo's Chocolate World</title>
+    <link rel="stylesheet" href="Zulaikhastyle.css"
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">
+        🍫 Bobo's Chocolate World
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<section class="product">
+    <h1>Our Sweet Products</h1>
+    <p>Discover our delicious chocolate treats!</p>
+
+    <div class="product-container">
+    <div class="product-card">
+        <img src="images/brownies strawberry.jpeg" alt= brownies">
+        <h2>Chocolate brownies</h2>
+        <p>Rich delicious chocolate brownies</p>
+        <button class="price" onclick="addToCart('Chocolate brownies',15)">RM15</button>
+    </div>
+    <div class="product-card">
+        <img src="images/chookies chocolate.jpeg" alt="Cookies">
+        <h2>Chocolate Cookies</h2>
+        <p>Crunchy cookies with chocolate chip</p>
+        <button class="price" onclick="addToCart('Chocolate cookies',10)">RM10</button>
+    </div>
+    <div class="product-card">
+        <img src="images/cake chocolate.jpeg" alt="Chocolate cake">
+        <h2>Chocolate Cake</h2>
+        <p>Soft and moist chocolate cake.</p>
+         <button class="price" onclick="addToCart('Chocolate cake',10)">RM10</button>
+    </div>
+    <!-- HOT CHOCOLATE -->
+<div class="product-card">
+    <img src="images/hot chocolate.jpeg" alt="Hot Chocolate">
+    <h2>Hot Chocolate</h2>
+    <p>Warm and creamy chocolate drink.</p>
+    <button class="price" onclick="addToCart('Hot Chocolate',12)">RM12</button>
+</div>
+
+<!-- MILKSHAKE -->
+<div class="product-card">
+    <img src="images/milkshake.jpeg" alt="Milkshake">
+    <h2>Chocolate Milkshake</h2>
+    <p>Thick, creamy and delicious.</p>
+    <button class="price" onclick="addToCart('Milkshake',13)">RM13</button>
+</div>
+
+<!-- FRAPPE -->
+<div class="product-card">
+    <img src="images/frappe.jpeg" alt="Frappe">
+    <h2>Chocolate Frappe</h2>
+    <p>Refreshing blended chocolate drink.</p>
+    <button class="price" onclick="addToCart('Frappe',14)">RM14</button>
+</div>
+
+<!-- SHAKES -->
+<div class="product-card">
+    <img src="images/shake.jpeg" alt="Chocolate Shakes">
+    <h2>Chocolate Shakes</h2>
+    <p>Sweet and creamy chocolate shake.</p>
+    <button class="price" onclick="addToCart('Chocolate Shakes',13)">RM13</button>
+</div>
+
+<!-- DONUT -->
+<div class="product-card">
+    <img src="images/donut.jpeg" alt="Chocolate Strawberry Donut">
+    <h2>Chocolate Strawberry Donut</h2>
+    <p>Soft donut with chocolate and strawberry.</p>
+    <button class="price" onclick="addToCart('Chocolate Strawberry Donut',8)">RM8</button>
+</div>
+
+<!-- CAKE BOWL -->
+<div class="product-card">
+    <img src="images/cake bowl.jpeg" alt="Cake Bowl">
+    <h2>Chocolate Cake Bowl</h2>
+    <p>Delicious chocolate cake in a bowl.</p>
+    <button class="price" onclick="addToCart('Cake Bowl',12)">RM12</button>
+</div>
+
+<!-- STRAWBERRY BITES -->
+<div class="product-card">
+    <img src="images/strawberry bites.jpeg" alt="Strawberry Chocolate Bites">
+    <h2>Strawberry Chocolate Bites</h2>
+    <p>Fresh strawberries covered in chocolate.</p>
+    <button class="price" onclick="addToCart('Strawberry Chocolate Bites',10)">RM10</button>
+</div>
+
+<!-- ICE CREAM -->
+<div class="product-card">
+    <img src="images/ice cream.jpeg" alt="Ice Cream">
+    <h2>Chocolate Ice Cream</h2>
+    <p>Cold, smooth and creamy dessert.</p>
+    <button class="price" onclick="addToCart('Ice Cream',7)">RM7</button>
+</div>
+
+<!-- DUBAI CHOCOLATE -->
+<div class="product-card">
+    <img src="images/chocolate dubai.jpeg" alt="Dubai Chocolate Strawberry Cup">
+    <h2>Dubai Chocolate Strawberry Cup</h2>
+    <p>Chocolate, strawberry and crispy kunafa.</p>
+    <button class="price" onclick="addToCart('Dubai Chocolate Strawberry Cup',18)">RM18</button>
+</div>
+
+<!-- MUFFINS -->
+<div class="product-card">
+    <img src="images/munffin.jpeg" alt="Chocolate Muffins">
+    <h2>Chocolate Muffins</h2>
+    <p>Soft and fluffy chocolate muffins.</p>
+    <button class="price" onclick="addToCart('Chocolate Muffins',6)">RM6</button>
+</div>
+
+<!-- CROISSANT -->
+<div class="product-card">
+    <img src="images/crossiant.jpeg" alt="Chocolate Croissant">
+    <h2>Chocolate Croissant</h2>
+    <p>Flaky pastry filled with chocolate.</p>
+    <button class="price" onclick="addToCart('Chocolate Croissant',9)">RM9</button>
+</div>
+</div>
+</section>
+<!-- SHOPPING CART -->
+
+<section class="cart-section">
+
+    <h2>My Shopping Cart ♡</h2>
+
+    <p>Cart Items: <span id="cart-count">0</span></p>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total Price:
+        <span id="total-price">RM 0.00</span>
+    </h3>
+
+    <button onclick="checkout()">Checkout ♡</button>
+
+</section>
+<!-- BACKGROUND MUSIC -->
+<audio id="backgroundMusic" autoplay loop>
+    <source src="audio/audio.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("load", function() {
+    const music = document.getElementById("backgroundMusic");
+    music.play().catch(error => {
+        console.log("Browser blocked autoplay:", error);
+    });
+});
+</script>
+<script src="zulaikhascript.js"></script>
+</body>
+</html>
